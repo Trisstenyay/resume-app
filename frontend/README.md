@@ -1,16 +1,24 @@
-# React + Vite
+Resume App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tailor your resume to any Job Description (JD) in minutes. Paste a JD, extract key skills, and instantly see how well your resume matches—plus which bullets to highlight and what you’re missing.
 
-Currently, two official plugins are available:
+Why this is useful:
+- For candidates: Quickly customize a resume for each application.
+- "For hiring managers: Receive applications that map clearly to the JD.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features:
+- JD parser: Extracts skills from any pasted job description.
+- Resume matcher: Compares JD skills to your resume JSON and returns:
+- A match score (0–100)
+- Matched vs missing skills
+- Top bullets from your resume with reasons (e.g., “mentions: react”)
+- Simple UI: Paste → Extract → Match.
 
-## React Compiler
+Tech Stack:
+- Frontend: React + Vite (JavaScript, CSS)
+- Backend: Flask (Python)
+- Data: Static resume JSON from GET /api/resume (no DB required yet)
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Credits:
+- Built by Tristan Tenyay — Flask backend + React/Vite frontend.
+Feedback and PRs welcome!
